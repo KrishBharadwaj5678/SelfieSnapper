@@ -1,5 +1,4 @@
 let video = document.querySelector("video");
-
 let captureButton = document.querySelector("button");
 
 const canvas = document.createElement("canvas");
