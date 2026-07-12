@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  cursor:
+    url("https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/SelfieSnapper/mainCursor.png")
+      0 0,
+    default;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -12,22 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-html {
-  --s: 150px;
-  --c1: #ff847c;
-  --c2: #e84a5f;
-  --c3: #fecea8;
-  --c4: #99b898;
-
-  --s: 100px;
-  --c1: #668284;
-  --c2: #b6d8c0;
-  --c3: #b9d7d9;
-  --_g:
-    #0000, var(--c1) 1deg 30deg, var(--c2) 31deg 89deg, var(--c1) 90deg 119deg,
-    #0000 120deg;
+  overflow: hidden;
 }
 
 video {
@@ -39,42 +31,25 @@ video {
   border-radius: 15px;
 }
 
-button {
-  display: block;
-  margin: 30px auto;
-  width: 160px;
-  height: 37px;
-  font-size: 18px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  background:
-    conic-gradient(
-      from 45deg at 75% 75%,
-      var(--c3) 90deg,
-      var(--c1) 0 180deg,
-      #0000 0
-    ),
-    conic-gradient(from -45deg at 25% 25%, var(--c3) 90deg, #0000 0),
-    conic-gradient(from -45deg at 50% 100%, #0000 180deg, var(--c3) 0),
-    conic-gradient(
-      from -45deg,
-      var(--c1) 90deg,
-      var(--c2) 0 225deg,
-      var(--c4) 0
-    );
-  background-size: var(--s) var(--s);
-  transition: all 0.5s;
+/* Loader Overlay */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 33, 33, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
 }
 
-button:hover {
-  background:
-    conic-gradient(from -60deg at 50% 28.86%, var(--_g)),
-    conic-gradient(from 30deg at 71.14% 50%, var(--_g)),
-    conic-gradient(from 120deg at 50% 71.14%, var(--_g)),
-    conic-gradient(from 210deg at 28.86% 50%, var(--_g)) var(--c3);
-  background-size: var(--s) var(--s);
+.loader-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
 }

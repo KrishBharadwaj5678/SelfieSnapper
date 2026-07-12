@@ -2,11 +2,6 @@
   video {
     width: 85%;
   }
-
-  button {
-    width: 120px;
-    font-size: 17.2px;
-  }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 400px) {
@@ -20,11 +15,6 @@
     width: 80%;
     height: 460px;
   }
-
-  button {
-    font-size: 19px;
-    height: 40px;
-  }
 }
 
 @media only screen and (min-width: 491px) and (max-width: 550px) {
@@ -32,21 +22,12 @@
     width: 75%;
     height: 480px;
   }
-
-  button {
-    height: 40px;
-  }
 }
 
 @media only screen and (min-width: 551px) and (max-width: 700px) {
   video {
     width: 72%;
     height: 550px;
-  }
-
-  button {
-    height: 43px;
-    font-size: 19px;
   }
 }
 
@@ -61,13 +42,6 @@
     width: 75%;
     height: 680px;
   }
-
-  button {
-    height: 53px;
-    font-size: 24px;
-    margin: 45px 0px 20px 0px;
-    width: 190px;
-  }
 }
 
 @media only screen and (min-width: 851px) and (max-width: 1000px) {
@@ -75,26 +49,12 @@
     width: 70%;
     height: 720px;
   }
-
-  button {
-    margin: 30px 0px 20px 0px;
-    height: 53px;
-    width: 180px;
-    font-size: 21px;
-  }
 }
 
 @media only screen and (min-width: 1001px) and (max-width: 1300px) {
   video {
     width: 55%;
     height: 580px;
-  }
-
-  button {
-    height: 55px;
-    width: 160px;
-    margin: 35px 0px 20px 0px;
-    font-size: 20.2px;
   }
 }
 
@@ -110,13 +70,6 @@
     width: 45%;
     height: 610px;
   }
-
-  button {
-    margin: 30px 0px 20px 0px;
-    height: 50px;
-    width: 150px;
-    font-size: 19px;
-  }
 }
 
 @media only screen and (min-width: 1451px) and (max-width: 1600px) {
@@ -124,25 +77,11 @@
     width: 50%;
     height: 700px;
   }
-
-  button {
-    margin: 30px 0px 25px 0px;
-    height: 54px;
-    width: 150px;
-    font-size: 20px;
-  }
 }
 
 @media only screen and (min-width: 1601px) and (max-width: 1800px) {
   video {
     width: 40%;
     height: 700px;
-  }
-
-  button {
-    height: 60px;
-    margin: 35px 0px 25px 0px;
-    width: 170px;
-    font-size: 22px;
   }
 }

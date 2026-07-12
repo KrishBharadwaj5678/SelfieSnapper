@@ -62,10 +62,43 @@
     <link rel="manifest" href="./public/favicon/site.webmanifest" />
     <link rel="stylesheet" href="./style/index.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="./style/capture.css" />
+    <link rel="stylesheet" href="./style/loader.css" />
   </head>
   <body>
+    <!-- Loader Overlay -->
+    <div class="loader-overlay" id="loaderOverlay">
+      <div class="newtons-cradle">
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+      </div>
+    </div>
+
     <video></video>
-    <button>Take Photo</button>
+    <!-- Capture Button -->
+    <div class="btn-wrapper">
+      <input id="capture-toggle" class="btn-cbox" type="checkbox" />
+      <label for="capture-toggle" class="btn">
+        <span class="letter">C</span>
+        <span class="letter">a</span>
+        <span class="letter">p</span>
+        <span class="letter">t</span>
+        <span class="letter">u</span>
+        <span class="letter">r</span>
+        <span class="letter">e</span>
+        <div class="shutter-wrapper">
+          <span class="shutter s-1"></span>
+          <span class="shutter s-2"></span>
+          <span class="shutter s-3"></span>
+          <span class="shutter s-4"></span>
+          <span class="shutter s-5"></span>
+          <span class="shutter s-6"></span>
+        </div>
+      </label>
+      <div class="flash"></div>
+    </div>
     <script src="./scripts/index.js" defer type="module"></script>
   </body>
 </html>

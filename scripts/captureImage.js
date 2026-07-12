@@ -1,6 +1,7 @@
 // Creating a canvas element to capture the video frame
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
+let captureSound = new Audio("./sounds/capture.mp3");
 
 export let captureImage = (video) => {
   // Set the canvas dimensions to match the video element
@@ -19,4 +20,5 @@ export let captureImage = (video) => {
   link.download = `SelfieSnapper_${Date.now()}.png`;
   document.body.appendChild(link);
   link.click();
+  captureSound.play();
 };
