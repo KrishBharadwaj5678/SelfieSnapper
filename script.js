@@ -7,7 +7,7 @@ const ctx = canvas.getContext("2d");
 
 // Accessing the user's webcam and microphone
 let vid = navigator.mediaDevices
-  .getUserMedia({ video: true, audio: true })
+  .getUserMedia({ video: true, audio: false })
   .then((stream) => {
     video.srcObject = stream;
     video.addEventListener("loadedmetadata", () => {
