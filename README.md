@@ -5,7 +5,7 @@
 Selfie Snapper that lets you **capture stunning selfies directly from your browser** using your webcam.
 
 ![SelfieSnapperWebDemo](https://github.com/KrishBharadwaj5678/SelfieSnapper/raw/main/demos/SelfieSnapperWebDemo.png)
-![SelfieSnapperMobileDemo](https://github.com/KrishBharadwaj5678/SelfieSnapper/raw/main/demos/SelfieSnapperMobileDemo.png)
+![SelfieSnapperMobileDemo](https://github.com/KrishBharadwaj5678/SelfieSnapper/raw/main/demos/SelfieSnapperMobileDemo.jpeg)
 
 ## ✨ Features
 
