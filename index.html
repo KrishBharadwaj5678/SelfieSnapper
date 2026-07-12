@@ -3,38 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selfie Snapper</title>
+    <link rel="manifest" href="./public/manifest.json" />
+    <title>Selfie Snapper | Capture Selfies Online</title>
     <!-- SEO Tags -->
     <meta
       name="description"
-      content="Selfie Snapper is a simple web app to capture selfies using your webcam directly from your browser. Fast, easy, and no installation required."
+      content="Selfie Snapper allows users to take selfies using their webcam. Capture your favorite moments and download them instantly!"
     />
     <meta
       name="keywords"
-      content="selfie snapper, webcam photo, online camera, take selfie online, capture photo browser, webcam app, html css js project, html"
+      content="selfie snapper, webcam photo, online camera, take selfie online, capture photo browser, webcam app, html, css, javascript, web development, front-end project"
     />
     <meta name="author" content="Krish Bharadwaj" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://selfiesnapper.netlify.app/" />
+
+    <!-- Mobile & PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Selfie Snapper" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Selfie Snapper",
+        "url": "https://selfiesnapper.netlify.app/",
+        "description": "Selfie Snapper allows users to take selfies using their webcam. Capture your favorite moments and download them instantly!",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Person",
+          "name": "Krish Bharadwaj"
+        }
+      }
+    </script>
     <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
-      href="favicon/favicon-96x96.png"
+      href="./public/favicon/favicon-96x96.png"
       sizes="96x96"
     />
-    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./public/favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="favicon/apple-touch-icon.png"
+      href="./public/favicon/apple-touch-icon.png"
     />
     <meta name="apple-mobile-web-app-title" content="Selfie Snapper" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="manifest" href="./public/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
   </head>
   <body>
-    <video src=""></video>
+    <video></video>
     <button>Take Photo</button>
-    <script src="./script.js" defer></script>
+    <script src="./scripts/index.js" defer type="module"></script>
   </body>
 </html>

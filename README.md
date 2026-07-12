@@ -9,23 +9,23 @@ Selfie Snapper that lets you **capture stunning selfies directly from your brows
 
 ## ✨ Features
 
-| Feature              | Description                                             |
-| -------------------- | ------------------------------------------------------- |
-| 📷 Webcam Access     | Capture selfies using your device camera                |
-| ⚡ Instant Capture    | Take photos instantly with a single click               |
-| 🎨 Clean UI          | Simple and user-friendly interface                      |
-| 💾 Download Images   | Save your captured selfies locally                      |
-| 🌐 Web-Based         | Works directly in your browser                          |
-| 📱 Responsive Design | Works on desktop and mobile devices                     |
+| Feature              | Description                               |
+| -------------------- | ----------------------------------------- |
+| 📷 Webcam Access     | Capture selfies using your device camera  |
+| ⚡ Instant Capture   | Take photos instantly with a single click |
+| 🎨 Clean UI          | Simple and user-friendly interface        |
+| 💾 Download Images   | Save your captured selfies locally        |
+| 🌐 Web-Based         | Works directly in your browser            |
+| 📱 Responsive Design | Works on desktop and mobile devices       |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology       | Purpose                                 |
-| ---------------- | --------------------------------------- |
-| 🌐 **HTML5**     | Structure of the web application        |
-| 🎨 **CSS3**      | Styling and responsive design           |
+| Technology        | Purpose                                 |
+| ----------------- | --------------------------------------- |
+| 🌐 **HTML5**      | Structure of the web application        |
+| 🎨 **CSS3**       | Styling and responsive design           |
 | ⚡ **JavaScript** | Handles webcam access and functionality |
 
 ---

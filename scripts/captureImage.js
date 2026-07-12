@@ -1,22 +1,8 @@
-let video = document.querySelector("video");
-let captureButton = document.querySelector("button");
-
 // Creating a canvas element to capture the video frame
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
 
-// Accessing the user's webcam and microphone
-let vid = navigator.mediaDevices
-  .getUserMedia({ video: true, audio: false })
-  .then((stream) => {
-    video.srcObject = stream;
-    video.addEventListener("loadedmetadata", () => {
-      video.play();
-    });
-  });
-
-// Function to capture a screenshot from the video stream
-function captureImage() {
+export let captureImage = (video) => {
   // Set the canvas dimensions to match the video element
   canvas.width = video.videoWidth;
   canvas.height = video.videoHeight;
@@ -33,6 +19,4 @@ function captureImage() {
   link.download = `SelfieSnapper_${Date.now()}.png`;
   document.body.appendChild(link);
   link.click();
-}
-
-captureButton.addEventListener("click", captureImage);
+};
